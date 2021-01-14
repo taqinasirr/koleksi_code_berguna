@@ -3,4 +3,5 @@ Koleksi code berguna untuk tanah air, nusa, bangsa, dan ibu pertiwi. Kalau ada s
 
 
 
-![backgroundsizecover](https://user-images.githubusercontent.com/21170527/104544206-2c99e900-5662-11eb-8ed6-7820f29c256f.gif)
+![programming1](https://user-images.githubusercontent.com/21170527/104544755-8222c580-5663-11eb-96d4-b917a05ce487.gif)
+
