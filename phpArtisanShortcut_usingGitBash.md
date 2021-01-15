@@ -4,7 +4,7 @@
 
  **masukkan code berikut:** 
  
-  alias pa="php artisan" 
+  alias pa="php artisan"  return 
   alias pas="php artisan serve" 
   alias pas1="php artisan serve --port=8001" 
   alias pas2="php artisan serve --port=8002" 
