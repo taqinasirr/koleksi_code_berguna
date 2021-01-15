@@ -29,7 +29,7 @@
   
   pa make:controller StudentController
   
-  ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/21170527/104784730-de046000-57c3-11eb-9006-42f931bb9a70.gif)
+  ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/21170527/104785225-ff198080-57c4-11eb-864b-fb372989116f.gif)
 
 
  
