@@ -15,9 +15,9 @@
   alias pamrol="php artisan migrate:rollback" 
   alias pamsta="php artisan migrate:status" 
   alias lara6="composer create-project --prefer-dist laravel/laravel blog '6'"
-  alias lara6x="composer create-project --prefer-dist laravel/laravel blog '6.\* '"
+  alias lara6x="composer create-project --prefer-dist laravel/laravel blog '6.*'"
   alias lara7="composer create-project --prefer-dist laravel/laravel blog '7'"
-  alias lara7x="composer create-project --prefer-dist laravel/laravel blog '7.\* '"
+  alias lara7x="composer create-project --prefer-dist laravel/laravel blog '7.*'"
   ```
 
 
