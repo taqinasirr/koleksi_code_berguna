@@ -1,4 +1,4 @@
-# koleksi_code_berguna  :fish: :fire:
+# koleksi_code_berguna  :parasol_on_ground: :floppy_disk: :malaysia: :octocat: :trollface:
 Koleksi code berguna untuk tanah air, nusa, bangsa, dan ibu pertiwi. Kalau ada sumur diladang, boleh kita menumpang mandi, kalau ada umur yang panjang, alhamdulillah
 
 
