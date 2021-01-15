@@ -14,10 +14,7 @@
   alias pamres="php artisan migrate:reset" 
   alias pamrol="php artisan migrate:rollback" 
   alias pamsta="php artisan migrate:status" 
-  alias lara6="composer create-project --prefer-dist laravel/laravel blog '6'"
-  alias lara6x="composer create-project --prefer-dist laravel/laravel blog '6.*'"
-  alias lara7="composer create-project --prefer-dist laravel/laravel blog '7'"
-  alias lara7x="composer create-project --prefer-dist laravel/laravel blog '7.*'"
+
   ```
   <br>
   
@@ -30,6 +27,14 @@
   pa make:controller StudentController
   
   ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/21170527/104785225-ff198080-57c4-11eb-864b-fb372989116f.gif)
+  
+  <br>
 
 
+buat shortcut untuk selain php artisan also can lah
+
+     alias lara6="composer create-project --prefer-dist laravel/laravel blog '6'"
+     alias lara6x="composer create-project --prefer-dist laravel/laravel blog '6.*'"
+     alias lara7="composer create-project --prefer-dist laravel/laravel blog '7'"
+     alias lara7x="composer create-project --prefer-dist laravel/laravel blog '7.*'"
  
