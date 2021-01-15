@@ -19,11 +19,17 @@
   alias lara7="composer create-project --prefer-dist laravel/laravel blog '7'"
   alias lara7x="composer create-project --prefer-dist laravel/laravel blog '7.*'"
   ```
-  
+  <br>
   
   if guna vscode, pastikan terminal guna git bash
   
   ![ezgif com-gif-maker](https://user-images.githubusercontent.com/21170527/104784003-481c0580-57c2-11eb-9bda-643a92adc15c.gif)
+  
+  <br>
+  
+  pa make:controller StudentController
+  
+  ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/21170527/104784730-de046000-57c3-11eb-9006-42f931bb9a70.gif)
 
 
  
