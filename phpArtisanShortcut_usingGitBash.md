@@ -35,11 +35,10 @@ buat shortcut untuk selain php artisan also can lah
 
 
 ```bash
-     alias lara6="composer create-project --prefer-dist laravel/laravel blog '6'"
-     alias lara6x="composer create-project --prefer-dist laravel/laravel blog '6.*'"
-     alias lara7="composer create-project --prefer-dist laravel/laravel blog '7'"
-     alias lara7x="composer create-project --prefer-dist laravel/laravel blog '7.*'"
-
+   alias lara6="composer create-project --prefer-dist laravel/laravel blog '6'"
+   alias lara6x="composer create-project --prefer-dist laravel/laravel blog '6.*'"
+   alias lara7="composer create-project --prefer-dist laravel/laravel blog '7'"
+   alias lara7x="composer create-project --prefer-dist laravel/laravel blog '7.*'"
   ```
 
 
