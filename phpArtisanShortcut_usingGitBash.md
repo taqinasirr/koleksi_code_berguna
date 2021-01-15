@@ -4,7 +4,8 @@
 
  **masukkan code berikut:** 
  
-  alias pa="php artisan" <br>
+  ```php
+  alias pa="php artisan" 
   alias pas="php artisan serve" <br>
   alias pas1="php artisan serve --port=8001" <br>
   alias pas2="php artisan serve --port=8002" <br>
@@ -17,6 +18,7 @@
   alias lara6x="composer create-project --prefer-dist laravel/laravel blog '6.\*'"<br>
   alias lara7="composer create-project --prefer-dist laravel/laravel blog '7'"<br>
   alias lara7x="composer create-project --prefer-dist laravel/laravel blog '7.\*'"<br>
+  ```
 
 
 
