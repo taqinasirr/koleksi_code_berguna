@@ -40,6 +40,9 @@ buat shortcut untuk selain php artisan also can lah
    alias lara7="composer create-project --prefer-dist laravel/laravel blog '7'"
    alias lara7x="composer create-project --prefer-dist laravel/laravel blog '7.*'"
   ```
-
-
+ <br>
+ 
+ lara6x
+ 
+ ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/21170527/104787710-3c810c80-57cb-11eb-81b3-a6f6c0e7b59a.gif)
  
