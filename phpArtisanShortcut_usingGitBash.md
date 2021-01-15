@@ -1,6 +1,6 @@
  # php artisan shorcut using git bash
  
- go to: ***"C:\Program Files\Git\etc"*** and open ***bash.bashrc***
+ go to: ***C:\Program Files\Git\etc*** and open ***bash.bashrc***
 
  **masukkan code berikut:** 
  
