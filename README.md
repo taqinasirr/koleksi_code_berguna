@@ -1,7 +1,5 @@
-# koleksi_code_berguna  :fish:
+# koleksi_code_berguna  :fish: :fire:
 Koleksi code berguna untuk tanah air, nusa, bangsa, dan ibu pertiwi. Kalau ada sumur diladang, boleh kita menumpang mandi, kalau ada umur yang panjang, alhamdulillah
-
-:fish:
 
 
 
