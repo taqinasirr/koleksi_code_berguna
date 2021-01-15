@@ -1,4 +1,4 @@
-# koleksi_code_berguna  :parasol_on_ground: 
+# koleksi_code_berguna  :hamster: :cow2: :cake: :ice_cream:
 Koleksi code berguna untuk tanah air, nusa, bangsa, dan ibu pertiwi. Kalau ada sumur diladang, boleh kita menumpang mandi, kalau ada umur yang panjang, alhamdulillah
 
 
