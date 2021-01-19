@@ -14,9 +14,9 @@
  https://user-images.githubusercontent.com/21170527/104985493-01d9d700-5a4c-11eb-8a52-af60cbbc2883.mp4
 <br><br><br>
 
-## **clone repository (using vscode):**
+## **Clone repository (using vscode):**
  https://user-images.githubusercontent.com/21170527/105018730-4ed7a080-5a80-11eb-8c3d-d38c6eca675c.mp4
 <br><br><br>
 
-## **create, update, rename, delete file:**
+## **Create, update, rename, delete file:**
  https://user-images.githubusercontent.com/21170527/105018790-60b94380-5a80-11eb-85ca-5b415a8d09f8.mp4
