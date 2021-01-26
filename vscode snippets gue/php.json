@@ -1,0 +1,683 @@
+{
+	"array numeric": {
+		"prefix": "arrnum",
+		"description": "array numeric",
+		"body": [
+			"['$1', '$2', '$3', '$4', '$5']"
+		]
+	},
+	"array numeric2": {
+		"prefix": "arrnum2",
+		"description": "array numeric2",
+		"body": [
+			"$$1=[",
+			"	[",
+			"		'$2',",
+			"		'$3',",
+			"		'$4',",
+			"		'$5',",
+			"	],",
+			"	[",
+			"		'$6',",
+			"		'$7',",
+			"		'$8',",
+			"		'$9',",
+			"	]",
+			"];"
+		]
+	},
+	"array associative": {
+		"prefix": "arrasso",
+		"description": "array associative",
+		"body": [
+			"$$1=[",
+			"		'$2' => '$3',",
+			"		'$4' => '$5',",
+			"		'$6' => '$7',",
+			"		'$8' => '$9',",
+			"];"
+		]
+	},
+	"array associative2": {
+		"prefix": "arrasso2",
+		"description": "array associative2",
+		"body": [
+			"$$1=[",
+			"	[",
+			"		'$2' => '$3',",
+			"		'$4' => '$5',",
+			"		'$6' => '$7',",
+			"		'$8' => '$9',",
+			"	],",
+			"	[",
+			"		'$10' => '$11',",
+			"		'$12' => '$13',",
+			"		'$14' => '$15',",
+			"		'$16' => '$17',",
+			"	],",
+			"];"
+		]
+	},
+	"GET": {
+		"prefix": "get",
+		"description": "GET",
+		"body": [
+			"$$_GET[\"$1\"]"
+		]
+	},
+	"POST": {
+		"prefix": "post",
+		"description": "POST",
+		"body": [
+			"$$_POST[\"$1\"]"
+		]
+	},
+	"files": {
+		"prefix": "files",
+		"description": "files",
+		"body": [
+			"$$_FILES['\"$1\"']['$2']"
+		]
+	},
+	"SESSION": {
+		"prefix": "session",
+		"description": "SESSION",
+		"body": [
+			"$$_SESSION[\"$1\"]"
+		]
+	},
+	"COOKIE": {
+		"prefix": "cookie",
+		"description": "COOKIE",
+		"body": [
+			"$$_COOKIE[\"$1\"]"
+		]
+	},
+	"ifissetGET": {
+		"prefix": "issetget",
+		"body": [
+			"if(isset($$_GET[\"$1\"])) {",
+			"	$2",
+			"}"
+		],
+		"description": "php if isset get"
+	},
+	"ifissetPOST": {
+		"prefix": "issetpost",
+		"body": [
+			"if(isset($$_POST[\"$1\"])) {",
+			"	$2",
+			"}"
+		],
+		"description": "php if isset post"
+	},
+	"ifissetsession": {
+		"prefix": "issetsession",
+		"body": [
+			"if(isset($$_SESSION[\"$1\"])) {",
+			"	$2",
+			"}"
+		],
+		"description": "php if isset session"
+	},
+	"ifissetcookie": {
+		"prefix": "issetcookie",
+		"body": [
+			"if(isset($$_COOKIE[\"$1\"])) {",
+			"	$2",
+			"}"
+		],
+		"description": "php if isset cookie"
+	},
+	"php echo script": {
+		"prefix": "echoscript",
+		"body": [
+			"echo '<script>",
+			"		  alert(\"$1\");",
+			"	  </script>';",
+		],
+		"description": "echo script"
+	},
+	"mcm dot notation": {
+		"prefix": ".",
+		"body": [
+			"->"
+		],
+		"description": "mcm dot notation"
+	},
+	"class": {
+		"prefix": "class",
+		"body": [
+			"class $1 {",
+			"    public $$2, ",
+			"           $$3, ",
+			"           $$4,",
+			"           $$5;",
+			"",
+			"    public function __construct($$2 =\"$2\", $$3=\"$3\", $$4 =\"$4\", $$5 =\"$5\"){",
+			"        $$this->$2 = $$2;",
+			"        $$this->$3 = $$3;",
+			"        $$this->$4 = $$4;",
+			"        $$this->$5 = $$5;",
+			"    }",
+			"",
+			"	$6",
+			"",
+			"}"
+		],
+		"description": "class"
+	},
+	"echo": {
+		"prefix": "echo",
+		"body": [
+			"echo \"$1\";"
+		],
+		"description": "echo"
+	},
+	"echoWithHtmlTag": {
+		"prefix": "echoWithHtmlTag",
+		"body": [
+			"echo \"<$1>$2</$1>\";"
+		],
+		"description": "echoWithHtmlTag"
+	},
+	"postmysqlirealescapestring": {
+		"prefix": "postmysqlirealescapestring",
+		"body": [
+			"$$1 = mysqli_real_escape_string($$conn, $$_POST[\"$1\"]);"
+		],
+		"description": "postmysqlirealescapestring"
+	},
+	"include": {
+		"prefix": "include",
+		"body": [
+			"include('$1');"
+		],
+		"description": "include"
+	},
+	"ifelseTernaryoperator": {
+		"prefix": "ifelseTernaryoperator",
+		"body": [
+			"echo $1 > $2 ? '$3' : '$4';"
+		],
+		"description": "ifelseTernaryoperator"
+	},
+	"html rangka basic": {
+		"prefix": "!htmlrangkabasic",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"<head>",
+			"    <title>$1</title>",
+			"</head>",
+			"<body>",
+			"    $2",
+			"</body>",
+			"</html>"
+		],
+		"description": "html rangka basic"
+	},
+	"function ": {
+		"prefix": "fu",
+		"body": [
+			"public function $1($2){",
+			"	$3",
+			"}"
+		],
+		"description": "function "
+	},
+	"mysqli_connect ": {
+		"prefix": "conn",
+		"body": [
+			"$$conn = mysqli_connect('$1', '$2', '$3', '$4');"
+		],
+		"description": "mysqli_connect "
+	},
+	"mysqli_query ": {
+		"prefix": "result",
+		"body": [
+			"\\\$$result = mysqli_query(\\\$$conn, \\\$$query);",
+			"$1"
+		],
+		"description": "mysqli_query "
+	},
+	"mysqli_fetch_all ": {
+		"prefix": "rowsfetchAll",
+		"body": [
+			"$$rows = mysqli_fetch_all($$result, MYSQL_ASSOC);"
+		],
+		"description": "mysqli_fetch_all "
+	},
+	"mysqli_fetch_assoc ": {
+		"prefix": "rowsfetchAssoc",
+		"body": [
+			"$$rows = mysqli_fetch_assoc($$result);"
+		],
+		"description": "mysqli_fetch_assoc "
+	},
+	"mysqli_affected_rows ": {
+		"prefix": "mysqli_affected_rows",
+		"body": [
+			"mysqli_affected_rows($$conn);"
+		],
+		"description": "mysqli_affected_rows "
+	},
+	"query ": {
+		"prefix": "query",
+		"body": [
+			"$$query = \"$2\";"
+		],
+		"description": "query "
+	},
+	"require function.php ": {
+		"prefix": "requirefunction.php",
+		"body": [
+			"require('functions.php');"
+		],
+		"description": "require function.php "
+	},
+	"global $conn ": {
+		"prefix": "global$conn",
+		"body": [
+			"global \\\$$conn;"
+		],
+		"description": "global $conn "
+	},
+	"echo js alert": {
+		"prefix": "echoalert",
+		"body": [
+			"echo \" <script>",
+			"		alert('$1')",
+			"		</script>\";",
+			"$2"
+		],
+		"description": "echo js alert"
+	},
+	"mysqli_error": {
+		"prefix": "mysqli_error",
+		"body": [
+			"mysqli_error($$conn)"
+		],
+		"description": "mysqli_error"
+	},
+	"mysqli_real_escape_string": {
+		"prefix": "mysqli_real_escape_string",
+		"body": [
+			"$$1 = mysqli_real_escape_string($$2)"
+		],
+		"description": "mysqli_real_escape_string"
+	},
+	"object": {
+		"prefix": "ob",
+		"body": [
+			"$$1 = new $2(\"$3\",\"$4\");"
+		],
+		"description": "object"
+	},
+	"object acess method": {
+		"prefix": "am",
+		"body": [
+			"$$1->$2"
+		],
+		"description": "object acess method"
+	},
+	"echo </break>": {
+		"prefix": "br",
+		"body": [
+			"echo '</br>'"
+		],
+		"description": "echo </break>"
+	},
+	"mysqliobject": {
+		"prefix": "phpmysqliobject",
+		"body": [
+			"$$mysqli = new mysqli(\"localhost\", \"root\", \"\", \"$1\");"
+		],
+		"description": "create mysqli object"
+	},
+	"phppreparedInsert1": {
+		"prefix": "phppreparedInsert1",
+		"body": [
+			"    $$sql = \"INSERT INTO $1($2) VALUES (?)\";",
+			"    $$stmt = $$mysqli->prepare($$sql);",
+			"    $$stmt->bind_param('$3', $$2);",
+			"    $$2 = Input::get('$2');",
+			"    $$stmt->execute();",
+		],
+		"description": "prepared statement Insert 1"
+	},
+	"phppreparedInsert2": {
+		"prefix": "phppreparedInsert2",
+		"body": [
+			"    $$sql = \"INSERT INTO $1($2, $3) VALUES (?,?)\";",
+			"    $$stmt = $$mysqli->prepare($$sql);",
+			"    $$stmt->bind_param('$4', $$2, $$3);",
+			"    $$2 = Input::get('$2');",
+			"    $$3 = Input::get('$3');",
+			"    $$stmt->execute();",
+		],
+		"description": "prepared statement Insert 2"
+	},
+	"phppreparedInsert3": {
+		"prefix": "phppreparedInsert3",
+		"body": [
+			"    $$sql = \"INSERT INTO $1($2, $3, $4) VALUES (?,?,?)\";",
+			"    $$stmt = $$mysqli->prepare($$sql);",
+			"    $$stmt->bind_param('$5', $$2, $$3, $$4);",
+			"    $$2 = Input::get('$2');",
+			"    $$3 = Input::get('$3');",
+			"    $$4 = Input::get('$4');",
+			"    $$stmt->execute();",
+		],
+		"description": "prepared statement Insert 3"
+	},
+
+	"phppreparedSelectAll": {
+		"prefix": "phppreparedSelectAll",
+		"body": [
+		  "    $$sql = \"SELECT * FROM users\";",
+		  "    $$stmt = $$mysqli->prepare($$sql);",
+		  "    $$stmt->execute();",
+		  "    $$result = $$stmt->get_result();",
+		  "<br><br>",
+		  "<table>",
+		  "    <thead>",
+		  "    <tr>",
+		  "        <th>Username</th>",
+		  "        <th>Password</th>",
+		  "        <th>Role</th>",
+		  "    </tr>",
+		  "    </thead>",
+		  "    <tbody>",
+		  "    <?php while($$row = $$result->fetch_assoc()) { ?>",
+		  "    <tr>",
+		  "        <td><?= $$row['username'];?></td>",
+		  "        <td><?= $$row['password'];?></td>",
+		  "        <td><?= $$row['role'];?></td>",
+		  "    </tr>",
+		  "    <?php } ?>",
+		  "    </tbody>",
+		  "</table>"
+		],
+		"description": "phppreparedSelectAll"
+	  },
+
+	  "phppreparedSelectWhere": {
+		"prefix": "phppreparedSelectWhere",
+		"body": [
+		  "    $$query = \"SELECT * FROM users WHERE role=?\";",
+		  "    $$stmt = $$mysqli->prepare($$query);",
+		  "    $$stmt->bind_param(\"i\", $$role);",
+		  "    $$role = \"1\";",
+		  "    $$stmt->execute();",
+		  "    $$result=$$stmt->get_result();",
+		  "<br><br>",
+		  "<table>",
+		  "    <thead>",
+		  "    <tr>",
+		  "        <th>Username</th>",
+		  "        <th>Password</th>",
+		  "        <th>Role</th>",
+		  "    </tr>",
+		  "    </thead>",
+		  "    <tbody>",
+		  "    <?php while($$row = $$result->fetch_assoc()) { ?>",
+		  "    <tr>",
+		  "        <td><?= $$row['username'];?></td>",
+		  "        <td><?= $$row['password'];?></td>",
+		  "        <td><?= $$row['role'];?></td>",
+		  "    </tr>",
+		  "    <?php } ?>",
+		  "    </tbody>",
+		  "</table>"
+		],
+		"description": "phppreparedSelectWhere"
+	  },
+
+	  "phppreparedUpdateDelete": {
+		"prefix": "phppreparedUpdateDelete",
+		"body": [
+		  "sama je mcm insert. cuma query je beza:",
+		  "",
+		  "$$sql = \"UPDATE player SET nama=?, negara=? WHERE ID=?\";",
+		  "",
+		  "$$sql = \"DELETE FROM player WHERE ID=?\""
+		],
+		"description": "phppreparedUpdateDelete"
+	  },
+
+	  "bladebrackets": {
+		"prefix": "bladebrackets",
+		"body": [
+		  "{{$$1}}"
+		],
+		"description": "bladebrackets"
+	  },
+
+	  "bladequeryparameter": {
+		"prefix": "bladequeryparameter",
+		"body": [
+		  "Route::get('urlpath', function () {",
+		  "        return view('bladefile', ['name' => request('name')]);",
+		  "    });",
+		  "//cth query parameter -->       ?name=abu&age=16"
+		],
+		"description": "bladequeryparameter"
+	  },
+
+	  "bladerouteparameter": {
+		"prefix": "bladerouteparameter",
+		"body": [
+		  "Route::get('urlpath/{id}', function ($$id) {",
+		  "        return view('bladefile', ['id' => $$id ]);",
+		  "    });"
+		],
+		"description": "bladerouteparameter"
+	  },
+
+	  "bladereturnvariable": {
+		"prefix": "bladereturnvariable",
+		"body": [
+		  "Route::get('urlpath', function () {",
+		  "        return view('bladefile', ['var' => 'varvalue']);",
+		  "    });"
+		],
+		"description": "bladereturnvariable"
+	  },
+	  
+	  "bladereturnarray": {
+		"prefix": "bladereturnarray",
+		"body": [
+		  "Route::get('urlpath', function () {",
+		  "",
+		  "        $$namaarray=[",
+		  "                'key1' => 'value',",
+		  "                'key2' => 'value',",
+		  "                'key3' => 'value'",
+		  "        ];",
+		  "",
+		  "        return view('bladefile', $$namaarray);",
+		  "    });",
+		  "",
+		  "//kat view just pakai {{key1}}  takpayah  {{$$namaarray['key1']}}   "
+		],
+		"description": "bladereturnarray"
+	  },
+
+	  "bladereturnmultideminsionalarray": {
+		"prefix": "bladereturnmultideminsionalarray",
+		"body": [
+		  "Route::get('urlpath', function () {",
+		  "",
+		  "        $$namaarray=[",
+		  "                ['key1' => 'value', 'key2' => 'value'],",
+		  "                ['key1' => 'value', 'key2' => 'value'],",
+		  "                ['key1' => 'value', 'key2' => 'value']",
+		  "        ];",
+		  "",
+		  "        return view('bladefile', ['namaarray' => $$namaarray]);",
+		  "    });",
+		  "",
+		  "//kat view  pakai {{$$namaarray['key1']}}  "
+		],
+		"description": "bladereturnmultideminsionalarray"
+	  },
+
+	  "bladeforeach": {
+		"prefix": "bladeforeach",
+		"body": [
+		  "@foreach ($$blabla as $$bla)",
+		  " <p>{{$$bla['key1']}}</p>",
+		  "@endforeach"
+		],
+		"description": "bladeforeach"
+	  },
+
+	  "bladecontroller": {
+		"prefix": "bladecontroller",
+		"body": [
+		  "//utk php 8 wajib bubuh ni kat web.php :",
+		  "",
+		  "use App\\Http\\Controllers\\NamaController;",
+		  "",
+		  "",
+		  "Route::get('urlpath', [NamaController::class,'index'] );     ",
+		  "",
+		  "Route::get('urlpath/{id}', [NamaController::class,'show'] );",
+		  "",
+		  "",
+		  "",
+		  "",
+		  "",
+		  "",
+		  "//utk urlpath yg takde extension kat hujung dia, cth  mentormentee.com/senaraimentor   -- pakai action kat controller yg bernama index()",
+		  "//utk urlpath yg ada extension kat hujung dia, cth mentormentee.com/senaraimentor/batupahat    -- pakai action kat controller yg bernama show()",
+		  "// index() dgn show() tu adalah naming convention utk action tu dimana laravel developer kat dunia ni guna nama tu",
+		  "",
+		  "//kat controller bentuk dia camni :",
+		  "class NamaController extends Controller",
+		  "{",
+		  "    public function index() {",
+		  "        return view('bladefile', $$blabla);",
+		  "    }",
+		  "",
+		  "    public function show($$id) {",
+		  "        return view('bladefile', ['id' => $$id ]);",
+		  "    }",
+		  "}"
+		],
+		"description": "bladecontroller"
+	  },
+	  "bladePHPartisan": {
+		"prefix": "bladePHPartisan",
+		"body": [
+		  "//php artisan",
+		  "",
+		  "serve ",
+		  "",
+		  "make:controller BlablaController"
+		],
+		"description": "bladePHPartisan"
+	  },
+
+	  "lara8route": {
+		"prefix": "lara8route",
+		"body": [
+		  "use App\\Http\\Controllers\\namaController;  ",
+		  "",
+		  "",
+		  "Route::get('namaPath', [namaController::class,'index'] );",
+		  "Route::get('namaPath/create', [namaController::class,'create'] );",
+		  "Route::get('namaPath', [namaController::class,'store'] );",
+		  "Route::get('namaPath/{id}', [namaController::class,'show'] );"
+		],
+		"description": "lara8route"
+	  },
+	  
+	  "lara8model": {
+		"prefix": "lara8model",
+		"body": [
+		  "use App\\Models\\Namatable;",
+		  "",
+		  "public function index() {",
+		  "    $$namatable = Namatable::all();",
+		  "    $$namatable = Namatable::orderBy('fieldname')->get();                      //Select * from table order by fieldname",
+		  "    $$namatable = Namatable::orderBy('fieldname', 'desc')->get();",
+		  "    $$namatable = Namatable::where('fieldname', 'fieldvalue')->get();          //Select * from table where fieldname = fieldvalue",
+		  "    $$namatable = Namatable::latest()->get();",
+		  "    $$namatable = Namatable::findOrFail('id');",
+		  "    ",
+		  "    return view('index', ['namatable'=>$$namatable]);",
+		  "}",
+		  "",
+		  "",
+		  "contoh kat view:",
+		  "",
+		  "@foreach($$namatable as $$nam)",
+		  "    <div>",
+		  "      {{$$nam->field1}} - {{$$nam->field2}} - {{$$nam->field3}}",
+		  "    </div>",
+		  "@endforeach ",
+		  "", 
+		  "p/s: namatable kat db ada s kat hujung. kat code sini nama table without s"
+		],
+		"description": "lara8model"
+	  },
+
+	  "lara8seederPlayer": {
+		"prefix": "lara8seederPlayer",
+		"body": [
+		  "use Illuminate\\Support\\Facades\\DB;",
+		  "use Illuminate\\Support\\Str;",
+		  "",
+		  "DB::table('players')->insert([",
+		  "    'name'=>'ronaldo',",
+		  "    'country'=>'portugal',",
+		  "]);",
+		  "",
+		  "DB::table('players')->insert([",
+		  "    'name'=>'messi',",
+		  "    'country'=>'argentina',",
+		  "]);",
+		  "",
+		  "DB::table('players')->insert([",
+		  "    'name'=>'neymar',",
+		  "    'country'=>'brazil',",
+		  "]);"
+		],
+		"description": "lara8seederPlayer"
+	  },
+
+	  "lara8commands": {
+		"prefix": "lara8commands",
+		"body": [
+		  "composer create-project --prefer-dist laravel/laravel blog \"6\"  ",
+		  "composer create-project --prefer-dist laravel/laravel blog \"6.*\"  ",
+		  "",
+		  "php artisan serve ",
+		  "php artisan serve --port=8001                          ",
+		  "php artisan --version  ",
+		  "php artisan make:controller NamaController",
+		  "php artisan make:migration create_namatable_table",
+		  "php artisan migrate",
+		  "php artisan migrate:refresh / rollback / reset / status",
+		  "php artisan make:migration add_namacolumn_to_namatable_table                                   ",
+		  "php artisan make:model Namatable",
+		  "php artisan make:seeder NamaSeeder",
+		  "php artisan db:seed --class=NamaSeeder      ",
+		  "",
+		  "mysql -u root ",
+		  "create database namaDB ;  "
+		],
+		"description": "lara8commands"
+	  },
+
+
+
+
+
+
+
+
+
+}
