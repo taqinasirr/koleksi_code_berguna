@@ -1,0 +1,12 @@
+
+
+1.  composer global require laravel/installer
+
+2.  laravel new pizzahouse
+
+
+rumusan: 
+  composer digunakan utk install pelbagai packages yg ada kat dlm dunia ni.
+  laravel installer adalah sebuah package.kita pakai composer utk install package ni. 
+  laravel installer ni lah yg digunakan utk create new laravel project.
+
