@@ -1,0 +1,24 @@
+
+create laravel project:
+  composer global require laravel/installer
+  laravel new larara
+
+kat .env tu DB_DATABASE = larara
+
+----------------------------------------------
+kat mysql terminal:
+
+mysql -u root
+create database larara
+-----------------------------------------
+tukar ke bash terminal:
+
+php artisan make:migration create_players_table       //create file utk migration
+php artisan migrate                                   //run migration.   migration = create table fields
+php artisan make:seeder PlayersSeeder                 //create file utk seed
+php artisan db:seed --class=PlayersSeeder             //run seed.    seed = insert value ke dlm table
+php artisan make:controller PlayersController         //create controller file
+php artisan make:model Player                         //create model file. Player tu adalah class yg extends class Model
+php artisan serve
+
+
