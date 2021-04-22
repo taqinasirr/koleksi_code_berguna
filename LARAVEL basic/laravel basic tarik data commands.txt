@@ -3,7 +3,7 @@ create laravel project:
   composer global require laravel/installer
   laravel new larara
 
-kat .env tu DB_DATABASE = larara  //dia dah autoomatic tah skrg
+kat .env tu DB_DATABASE = larara  //dia dah automatic dah skrg
 
 ----------------------------------------------
 kat mysql terminal:
